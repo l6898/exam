@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --principal: #F7FD04;
+    --secundario:#F9B208;
+    --tercero:#F98404;
+    --cuarto: #fc5404;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tercero);
+    width: 100%;
+
+}
+nav .login{
+ margin-top: .5rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+nav ul li{
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+
+logo{
+    width: 1%;
+}
+login{
+    padding: 1rem;
+}
+
+body{
+    background-color:var(--secundario);
+    
+}
+
+    
+img{
+    max-width: 1200px;
+   
+}
+.one {
+   
+    border: solid black 2px;
+  /*   position: absolute;
+    width: 100%; */
+   
+} 
+.what{
+    position: absolute;
+    width: 100%;
+}
+.two{
+    border: solid black 2px;
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--principal);
+    z-index: 10;
+    position: absolute;
+    top: 150px;
+    right: 600px;
+  
+}
+
+button{
+    background-color:var(--cuarto);
+    border-radius: 1rem;
+    width: 40%;
+    height: 30%;
+}
+aside {
+    margin-top: 5rem;
+    float: right;
+    overflow: hidden;
+    margin-right: 2%;
+   
+
+  }
+h3, h2{ 
+    text-align: center;
+    font: weight 100px;;
+
+}
+
+.container{
+    width: 50%;
+    padding:5rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+   background-color:var(--principal);
+   position: relative;
+   top: 50%;
+   left: 20%;
+
+}
+footer{
+    background-color:var(--secundario)
+
+   
+}
+
+
+
+/* tablet */
+@media only screen and (min-width: 600px){
+ img{
+    width: 100%;
+ }
+ .two{
+    border: solid black 2px;
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--principal);
+  /*   z-index: 10; */
+    position: absolute;
+    top: 400px;
+    right: 60px;
+ }
+ aside{
+    margin-top: rem;
+    float:none;
+    overflow: hidden;
+    margin-right: 2%;
+   
+ }
+}
+/* mobile */
+@media only screen and (min-width: 480px){
+  img{
+    width: 50%;
+  }
+}
